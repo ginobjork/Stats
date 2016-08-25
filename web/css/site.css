@@ -1,0 +1,236 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    bottom: -1px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-small;
+    line-height: 1;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e252";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e253";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/*
+ * START Fixed header table container
+ */
+div[class].tableContainer {
+	overflow: auto;
+}
+
+/* clean up for allowing display Opera 5.x/6.x and MacIE 5.x */
+html>body div.tableContainer {
+	height: auto;
+	padding: 0;
+}
+
+/* define width of table. Opera 5.x/6.x and MacIE 5.x */
+html>body div.tableContainer table {
+	float: none;
+	margin: 0;
+}
+
+/* Reset overflow value to hidden for all non-IE browsers. */
+/* Filter out Opera 5.x/6.x and MacIE 5.x                  */
+head:first-child+body div[class].tableContainer {
+	overflow: hidden;
+}
+
+/* define width of table. IE browsers only                 */
+/* if width is set to 100%, you can remove the width       */
+/* property from div.tableContainer and have the div scale */
+div[class].tableContainer table {
+	float: left;
+	width: 100%
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+/* Filter out Opera 5.x/6.x and MacIE 5.x                                                 */
+head:first-child+body tr[class].fixedHeader {
+	display: block;
+}
+
+head:first-child+body div[class].tableContainer table tbody {
+	display: block;
+	overflow: auto;
+	width: 100%
+}
+
+div[class].tableContainer th {
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div[class].tableContainer td {
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+/*
+ * END Fixed header table container
+ */
+
+/*
+ * START Lineup container dimensions
+ */
+div[class].lineup-index div[class].tableContainer {
+	width: 1001px;
+}
+
+html>body div.lineup-index div.tableContainer table {
+	width: 985px
+}
+/* Reset overflow value to hidden for all non-IE browsers. */
+/* Filter out Opera 5.x/6.x and MacIE 5.x                  */
+head:first-child+body div[class].lineup-index div[class].tableContainer {
+	width: 1001px
+}
+
+/* define width of table. Add 16px to width for scrollbar.           */
+/* All other non-IE browsers. Filter out Opera 5.x/6.x and MacIE 5.x */
+head:first-child+body div[class].lineup-index div[class].tableContainer table {
+	width: 1001px
+}
+
+head:first-child+body div[class].lineup-index div[class].tableContainer table tbody {
+	height: 380px;
+}
+/*
+ * END Lineup container dimensions
+ */
+
+.lineup {
+    padding-left: 5px;
+}
+
+.statColumn {
+	text-align: right;
+}
+
+.timeColumn {
+	text-align: center;
+}
+
+.descColumn {
+	text-align: left;
+}
+
+.titleHeaderCenter {
+	text-align: center;
+}
+
+/*.titleHeaderCenter :not(a.desc):after {
+	content: 'o';
+	font-size: 8px;
+}*/
+
+.panel-heading {
+    padding: 0px;
+	/*background-color: #387FCB;
+	border-color: #387FCB;*/    
+}
+
+.fixed-header {
+	background-color: rgb(228, 239, 239);
+}
+
+.kv-panel-after {
+    padding: 5px;
+}
+
+.kv-grid-container {
+    background-color: aliceblue;
+	color: #5e5e5e;
+}
+
+.panel-title-container {
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 34px;
+}
+
+
+
+.sepia {-webkit-filter: sepia(100%); filter: sepia(100%);}
